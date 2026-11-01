@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.overnight.forceautorotate'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.overnight.forceautorotate'
+        // LSPosed は Android 8.1 (API 27) 以降が対象
+        minSdk 27
+        targetSdk 35
+        versionCode 4
+        versionName '2.1'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // src/main/resources の META-INF/xposed/* を APK に確実に入れる
+    // (AGP のデフォルト packaging では META-INF が除外されうるため)
+    packaging {
+        resources {
+            merges += 'META-INF/xposed/*'
+            excludes += '**'
+        }
+    }
+}
+
+dependencies {
+    // Modern Xposed API (libxposed) 102。
+    // 実行時はフレームワーク側から提供されるので compileOnly
+    compileOnly 'io.github.libxposed:api:102.0.0'
+}
