@@ -1,5 +1,9 @@
-# Force Auto Rotate (LSPosed モジュール) v2.1 — Xposed API 102 版
+# ForceAutoRotate
 
-スコープ内のアプリを強制自動回転（センサー）にする
-BOAT RACE　https://play.google.com/store/apps/details?id=jp.boatrace.android.boatraceapp&hl=ja
-用に作成
+スコープ内のアプリを強制的にセンサー自動回転にする LSPosed モジュール（Modern Xposed API 102）。
+
+- 対応：API 102 対応フレームワーク（LSPosed 等）、Android 8.1 以降
+- ダウンロード：Releases の ForceAutoRotate-v2.1.apk
+- 使い方：インストール後、LSPosed で有効化してスコープに対象アプリを選ぶ
+
+BOAT RACE アプリ用に作成。
