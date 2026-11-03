@@ -10,5 +10,6 @@ BOAT RACE アプリ用に作成。
 
 ## ライセンス・出典
 
-コードは独自実装。依存ライブラリは libxposed API
-(Apache License 2.0) のみ。
+コードは独自実装。本プロジェクトは Apache License 2.0 の下で
+公開しています (全文は同梱の LICENSE ファイルを参照)。
+依存ライブラリは libxposed API (Apache License 2.0) のみ。
