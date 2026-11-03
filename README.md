@@ -7,3 +7,8 @@
 - 使い方：インストール後、LSPosed で有効化してスコープに対象アプリを選ぶ
 
 BOAT RACE アプリ用に作成。
+
+## ライセンス・出典
+
+コードは独自実装。依存ライブラリは libxposed API
+(Apache License 2.0) のみ。
